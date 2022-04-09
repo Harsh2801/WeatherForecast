@@ -1,8 +1,11 @@
-from GandhiWeather.MainWindow import MainWindow
-from GandhiWeather.IntroWindow import WelcomeWindow
+from MainWindow import *
+from IntroWindow import *
 
-welcome_window = WelcomeWindow()
-welcome_window.mainloop()
+welcome_win = WelcomeWindow()
+welcome_win.mainloop()
 
-main_win = MainWindow()
-main_win.mainloop()
+try:
+    main_win = MainWindow()
+    main_win.mainloop()
+except TypeError:
+    pass
